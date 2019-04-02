@@ -56,6 +56,7 @@
 线程栈就是使用了预留和提交两个机制，创建线程栈时，只是一个预留的虚拟地址区域，默认为1MB大小，随着虚拟内存管理器不断地动态的提交该虚拟地址区域的后续页以满足其需求，当提交最后一页时抛出一个栈溢出的异常，抛出栈异常的时候其实栈还有一页的空间可用，程序仍然可以正常运行。防止栈溢出崩溃需要处理栈溢出异常。
 ##### 访问虚拟内存时的处理流程：
 5）使用一张流程图可以很清晰的描述这一过程。
+<div align=center><img width="800" height="600" src="https://github.com/13269351120/C-Application-Program-Performance-Optimization/blob/master/unit4/pics/virtualMemoryProcess.png"/></div>
 
 #### Linux内存管理
 
